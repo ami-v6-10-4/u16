@@ -13,7 +13,7 @@ runtime:
     
       pre_ci_boot:
         image_name: drydock/u14
-        image_tag: master
+        image_tag: v6.10.4
         env: envInPreCiBootBuild=bar
         pull: $IMAGE_PULL
         options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -77,7 +77,7 @@ runtime:
     
       pre_ci_boot:
         image_name: drydock/u16
-        image_tag: master
+        image_tag: v6.10.4
         env: envInPreCiBootBuild=bar
         pull: $IMAGE_PULL
         options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -142,7 +142,7 @@ runtime:
     
       pre_ci_boot:
         image_name: drydock/c7
-        image_tag: master
+        image_tag: v6.10.4
         env: envInPreCiBootBuild=bar
         pull: $IMAGE_PULL
         options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -211,7 +211,7 @@ build:
     
   pre_ci_boot:  #commenting them since i cant override these section in restricted node pool
     image_name: drydock/u16all
-    image_tag: master
+    image_tag: v6.10.4
     env: envInPreCiBoot=bar
     pull: $IMAGE_PULL
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
